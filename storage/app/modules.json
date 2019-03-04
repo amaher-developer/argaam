@@ -1,0 +1,52 @@
+{
+    "Access": {
+        "basename": "Access",
+        "name": "Access",
+        "slug": "access",
+        "version": "1.0",
+        "description": "This is the description for the Access module.",
+        "id": 107555668,
+        "enabled": true,
+        "order": 9001
+    },
+    "Argaam": {
+        "basename": "Argaam",
+        "name": "Argaam",
+        "slug": "argaam",
+        "version": "1.0",
+        "description": "This is the description for the Argaam module.",
+        "id": 1366943581,
+        "enabled": true,
+        "order": 9001
+    },
+    "Crud": {
+        "basename": "Crud",
+        "name": "Crud",
+        "slug": "crud",
+        "version": "1.0",
+        "description": "This is the description for the Crud module.",
+        "id": 1194660669,
+        "enabled": true,
+        "order": 9001
+    },
+    "Generic": {
+        "basename": "Generic",
+        "name": "Generic",
+        "slug": "generic",
+        "version": "1.0",
+        "description": "This is the description for the Generic module.",
+        "id": 2521801171,
+        "order": 9001,
+        "enabled": true
+    },
+    "Notification": {
+        "basename": "Notification",
+        "name": "Notification",
+        "slug": "notification",
+        "version": "1.0",
+        "description": "This is the description for the Notification module.",
+        "id": 3209983690,
+        "enabled": true,
+        "order": 9001
+    }
+}

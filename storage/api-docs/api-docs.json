@@ -1,0 +1,99 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Example",
+        "version": 1,
+        "x-some-name": "a-value",
+        "x-another": 2,
+        "x-complex-type": {
+            "supported": [
+                {
+                    "version": "1.0",
+                    "level": "baseapi"
+                },
+                {
+                    "version": "2.1",
+                    "level": "fullapi"
+                }
+            ]
+        }
+    },
+    "paths": {
+        "/api/post-example": {
+            "post": {
+                "summary": "Order Details for saidalany",
+                "operationId": "Order Details as pharmacy",
+                "parameters": [
+                    {
+                        "name": "order_id",
+                        "in": "formData",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_type",
+                        "in": "formData",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "access token"
+                    },
+                    "406": {
+                        "description": "not acceptable"
+                    },
+                    "500": {
+                        "description": "internal server error"
+                    }
+                }
+            }
+        },
+        "/api/": {
+            "get": {
+                "summary": "Example For Api Documentation",
+                "operationId": "main",
+                "parameters": [
+                    {
+                        "name": "customerId",
+                        "in": "path",
+                        "description": "Target customer.",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filter results based on query string value.",
+                        "required": false,
+                        "type": "string",
+                        "enum": [
+                            "active",
+                            "expired",
+                            "scheduled"
+                        ]
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "406": {
+                        "description": "not acceptable"
+                    },
+                    "500": {
+                        "description": "internal server error"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {}
+}
